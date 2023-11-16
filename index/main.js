@@ -15,3 +15,24 @@ while (contador < listaDeTeclas.length) {
 
   console.log(contador);
 }
+
+//para
+for (let contador = 0; contador < listaDeTeclas.lenght: contador++) {
+
+  const tecla = listaDeTeclas[contador];
+  const intrumento = teclas.classList[1];
+  const idAudio = '#som_${instrumento}'; //template string
+
+  tecla.onclick = function () {
+    tocaSom(idAudio);
+  }
+
+  tecla.onkeydown = function () {
+    tecla.classList.add('ativa');
+  }
+
+  tacla.onkeyup = function () {
+    tecla.classList.remove('ativa');
+  }
+
+  
